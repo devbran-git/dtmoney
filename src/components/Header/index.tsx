@@ -5,13 +5,13 @@ import {
 
 import logoImg from '../../assets/logo.svg'
 
-export function Header() {
+export function Header({ ...rest }) {
   return (
     <Container>
       <Content>
         <img src={logoImg} alt='dt money' />
 
-        <button type='button'>
+        <button type='button' {...rest}>
           Nova transação
         </button>
       </Content>
